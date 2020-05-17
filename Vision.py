@@ -35,7 +35,15 @@ class Vision:
         
 
     def livefeed(self):
-        """Use this function when testing the robot visual input from cameras"""
+        """This code will display the current feed of the cameras"""
         print("Current live feed from both cameras")
 
-
+    def testVision(self):
+        """Use this function when testing the robot visual input from cameras"""
+        print("Begin Test")
+        self.activate()
+        time.sleep(1)
+        self.livefeed()
+        time.sleep(1)
+        self.shutdown()
+        print("End Test")
